@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /
+
+Sitemap: https://demo.jahidshah.com/sitemap.xml
+Sitemap: https://demo.jahidshah.com/sitemap.rss
+Sitemap: https://demo.jahidshah.com/sitemap_index.xml
+# ---------------------------
+# END YOAST BLOCK
