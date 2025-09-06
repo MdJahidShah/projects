@@ -1,0 +1,263 @@
+    .ajcelt_plugin-container {
+        width: 100%;
+        padding:0 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    /*Benefit Section Start*/
+    section#ajcelt_BenefitsSec {
+        background: #ccc;
+        min-height: 478px;
+        overflow: hidden;
+    }
+    #ajcelt_BenefitsSec img {
+        width: 73%;
+        height: auto;
+        max-height: 478px; /* Adjust if needed */
+        display: block;
+    }
+    .ajcelt_whatido {
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    .ajcelt_whatido span {
+        border-bottom: 3px solid #ff497c;
+        color: #065f02;
+    }
+    .ajcelt_imageoverlay {
+        font-size: 3.5rem;
+        color: #2b2d2e;
+        margin-bottom: 1rem;
+    }
+    .ajcelt_imageoverlay img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        padding: 5px;
+        border: 3px solid #ccc;
+    }
+    .ajcelt_image-container {
+        min-height: 300px; /* Reserve space to prevent layout shifts */
+    }
+    
+    .ajcelt_cards {
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: transparent;
+        background-clip: border-box;
+        border-radius: .25rem;
+        align-content: stretch;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .ajcelt_cards-header h1 {
+        font-weight: 900 !important;
+        color: rgb(50, 54, 57) !important;
+        --tcb-applied-color: rgb(50, 54, 57) !important;
+        line-height: 50px !important;
+        font-size: 40px;
+        font-family: Open sans-serif;
+    }
+    .highlight {
+        color: red; /* Change the color as needed */
+        font-weight: bold; /* Additional styling */
+    }
+
+    .ajcelt_cards-header {
+        padding: 0.5rem 1rem;
+        margin-bottom: 0;
+    }
+    a.ajcelt_getbtn{
+    display: inline-block;
+    font-weight: 700;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 5px;
+    transition: color .15sease-in-out, background-color .15sease-in-out, border-color .15sease-in-out, box-shadow .15sease-in-out;
+    }
+    a.ajcelt_getbtn:hover{
+        color: #111010;
+    }
+    a.ajcelt_text-white-py {
+        color: #fff;
+    }
+    .ajcelt_card-bodycss{
+        padding:0 1rem;
+    }
+    .ajcelt_card-bodycss p {
+        font-weight: 500;
+    }
+    .ajcelt_card-bodyp p{
+        padding: 0 !important;
+		color: #141414;
+    }
+    /*Tools Section End*/
+    .ajcelt_tools-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.5rem;
+        padding: 5px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .ajcelt_tools-card {
+        background: white;
+        border-radius: 10px;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+        cursor: pointer;
+    }
+
+    .ajcelt_tools-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    .ajcelt_tool-icon {
+        font-size: 2.5rem;
+        color: #2b2d2e;
+        margin-bottom: 1rem;
+    }
+
+    .ajcelt_category-section {
+        margin: 4rem 0;
+        padding: 0 2rem;
+    }
+
+    .ajcelt_category-title {
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 1.7rem;
+        color: #2b2d2e;
+    }
+    span.ajcelt_category-title:hover{
+      color: #ff497c;
+    }
+
+    .ajcelt_cta-button {
+        background: #007bff;
+        color: white;
+        padding: 1rem 2rem;
+        border-radius: 25px;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 1rem;
+        transition: background 0.3s;
+    }
+
+    .ajcelt_cta-button:hover {
+        background: var(--secondary-color);
+    }
+    
+    span.ajcelt_title-color {
+        color: #F44336;
+        border-bottom: 3px solid #2563eb;
+    }
+
+    .ajcelt_tools-card a {
+    color: #212529;
+    text-decoration: none;
+    border: 0.1px solid #bbbbbb;
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    text-decoration: none;
+  }
+
+    .ajcelt_tools-card a:hover {
+      box-shadow: 10px 6px 28px #ddd;
+      text-decoration: none;
+    }
+    .ajcelt_hidebutton {
+        display: flex;
+        justify-content: center;
+    }
+    .ajcelt_usenowbutton{
+        display: none;
+    }
+
+/*--------------------------------------------------
+                    Responsive Css
+---------------------------------------------------*/  
+      /* Responsive max-widths */
+      @media (min-width: 576px) {
+        .ajcelt_plugin-container {
+          max-width: 540px;
+        }
+      }
+      @media screen and (max-width: 650px) {
+        .ajcelt_usenowbutton {
+            display: block;
+            width: 60%;
+            border: 1px solid #ccc;
+            border-radius: 15px;
+            background: #0984e3;
+            color: #fff;
+        }
+      
+      }
+      
+      @media (min-width: 768px) {
+        .ajcelt_plugin-container {
+          max-width: 720px;
+        }
+        .ajcelt_tools-grid {
+            grid-template-columns: repeat(1, 1fr);
+        }
+      }
+      
+      @media (min-width: 992px) {
+        .ajcelt_plugin-container {
+          max-width: 960px;
+        }
+        .ajcelt_plugin-container.ajcelt_cards-per-row-1 .ajcelt_tools-grid {
+          grid-template-columns: repeat(1, 1fr);
+        }
+        .ajcelt_plugin-container.ajcelt_cards-per-row-2 .ajcelt_tools-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .ajcelt_plugin-container.ajcelt_cards-per-row-3 .ajcelt_tools-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+        .ajcelt_plugin-container.ajcelt_cards-per-row-4 .ajcelt_tools-grid {
+          grid-template-columns: repeat(4, 1fr);
+        }
+        .ajcelt_plugin-container.ajcelt_cards-per-row-5 .ajcelt_tools-grid {
+          grid-template-columns: repeat(5, 1fr);
+        }
+        .ajcelt_plugin-container.ajcelt_cards-per-row-6 .ajcelt_tools-grid {
+          grid-template-columns: repeat(6, 1fr);
+        }
+        
+      }
+      
+      @media (min-width: 1200px) {
+        .ajcelt_plugin-container {
+          max-width: 100%;
+        }
+      }
+      
+      @media (min-width: 1400px) {
+        .ajcelt_plugin-container {
+          max-width: 100%;
+        }
+      }
+      

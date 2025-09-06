@@ -1,0 +1,133 @@
+.tsklytl-tools-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:1.5rem;
+    padding:5px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Card */
+.pixelradar_tool-card {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-decoration: none !important;
+}
+div#aj-portfiliocontent h2 {
+    border-bottom: 3px solid #ad004d;
+}
+.pixelradar_tool-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Inner card */
+.tsklytl-taskly_tool-card {
+  text-align: left;
+}
+
+.tsklytl-tool-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Button overlay */
+.tsklytl-tool-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ff4081;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none; /* not clickable when hidden */
+  z-index: 1;
+}
+
+/* Show button on hover */
+.pixelradar_tool-card:hover .tsklytl-tool-btn {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.05);
+  pointer-events: auto;
+}
+
+/* Optional: dark overlay on hover for clarity */
+.pixelradar_tool-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.pixelradar_tool-card:hover::after {
+  opacity: 1;
+}
+
+@media (max-width: 1199px) {
+.tsklytl-tools-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+.tsklytl-tools-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    h1 {
+        font-size: 2.2rem;
+    }
+    
+.tsklytl-stat-item {
+        min-width: 140px;
+    }
+    
+.tsklytlmodal-content {
+        margin: 10% auto;
+        width: 95%;
+        padding: 20px;
+    }
+    
+.tsklytl-stopwatch-controls {
+        flex-direction: column;
+    }
+    
+.tsklytl-calculator-buttons {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+.tsklytl-tools-container {
+        grid-template-columns: 1fr;
+    }
+    
+.tsklytl-stat-item {
+        width: 100%;
+    }
+    
+.tsklytl-crop-controls {
+        flex-direction: column;
+    }
+
+.tsklytl-emi-result, .tsklytl-sip-result {
+        grid-template-columns: 1fr;
+    }
+    
+.tsklytl-water-cups {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

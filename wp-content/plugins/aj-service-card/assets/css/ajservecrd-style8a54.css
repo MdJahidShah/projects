@@ -1,0 +1,199 @@
+    .ajsrv-plugin-container {
+        width: 100%;
+        padding:0 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .ajsrv-imageoverlay {
+        font-size: 100px;
+        color: #000;
+        margin-bottom: 1rem;
+    }
+    .ajsrv-imageoverlay img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        padding: 5px;
+        border: 3px solid #ccc;
+    }
+    a.text-white-py {
+        color: #fff;
+    }
+    .ajsrv-card-bodycss{
+        padding:0 0.2rem;
+    }
+    .ajsrv-card-bodycss p {
+        font-weight: 500;
+    }
+    .ajsrv-card-bodyp p{
+        padding: 0 !important;
+		    color: #141414;
+    }
+    
+    .currency-symbol {
+        color: #212121;
+        font-weight: bold;
+        margin-right: 0px;
+        font-family: sans-serif;
+    }
+
+    .ajservecrd-price {
+        font-size: 18px;
+        color: #333333;
+        font-weight: 600;
+        padding: 10px 0;
+    }
+
+    .ajsrv-list {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        padding: 0%;
+    }
+    .ajsrv-list ul li::marker {
+      color: blue;          /* Change marker color */
+      content: "✔ ";        /* Optional: change marker to custom symbol */
+    }
+    .ajsrv-card-bodyp ul li {
+        list-style-type: disclosure-closed;
+    }
+    ul.ajservecrd-feature-list.list-none{
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        align-items: flex-start;
+        text-transform: capitalize;
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .aj-serve-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0.5rem;
+        padding: 5px 3px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .aj-serve-card {
+        background: #f5f5f5;
+        border-radius: 10px;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+        cursor: auto;
+        padding: 10px 10px 20px 10px;
+    }
+
+    .aj-serve-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    .ajsrv-category-title {
+        text-align: center;
+        margin-bottom: 0.5rem;
+        font-size: 1.7rem;
+        color: #000;
+        font-weight: 700;
+    }
+
+    a.order-btn.ajsrv-cta-button{
+        background: #e6146f;
+        color: #fff !important;
+        padding: 2% 5%;
+        border-radius: 15px;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 1rem;
+        transition: background 0.3s;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    a.order-btn.ajsrv-cta-button:hover {
+        background: #b10751;
+        color:#f5f5f5 !important;
+    }
+    
+    span.title-color {
+        color: #F44336;
+        border-bottom: 3px solid #2563eb;
+    }
+
+    .hidebutton {
+        display: flex;
+        justify-content: center;
+    }
+    .usenowbutton{
+        display: none;
+    }
+
+/*--------------------------------------------------
+                    Responsive Css
+---------------------------------------------------*/  
+      /* Responsive max-widths */
+      @media (min-width: 576px) {
+        .ajsrv-plugin-container {
+          max-width: 540px;
+        }
+      }
+      @media screen and (max-width: 650px) {
+        .usenowbutton {
+            display: block;
+            width: 60%;
+            border: 1px solid #ccc;
+            border-radius: 15px;
+            background: #0984e3;
+            color: #fff;
+        }
+      
+      }
+      
+      @media (min-width: 768px) {
+        .ajsrv-plugin-container {
+          max-width: 720px;
+        }
+        .aj-serve-grid {
+            grid-template-columns: repeat(1, 1fr);
+        }
+      }
+      
+      @media (min-width: 992px) {
+        .ajsrv-plugin-container {
+          max-width: 960px;
+        }
+        .ajsrv-plugin-container.cards-per-row-1 .aj-serve-grid {
+          grid-template-columns: repeat(1, 1fr);
+        }
+        .ajsrv-plugin-container.cards-per-row-2 .aj-serve-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .ajsrv-plugin-container.cards-per-row-3 .aj-serve-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+        .ajsrv-plugin-container.cards-per-row-4 .aj-serve-grid {
+          grid-template-columns: repeat(4, 1fr);
+        }
+        .ajsrv-plugin-container.cards-per-row-5 .aj-serve-grid {
+          grid-template-columns: repeat(5, 1fr);
+        }
+        .ajsrv-plugin-container.cards-per-row-6 .aj-serve-grid {
+          grid-template-columns: repeat(6, 1fr);
+        }
+        
+      }
+      
+      @media (min-width: 1200px) {
+        .ajsrv-plugin-container {
+          max-width: 100%;
+        }
+      }
+      
+      @media (min-width: 1400px) {
+        .ajsrv-plugin-container {
+          max-width: 100%;
+        }
+      }
+      
